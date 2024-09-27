@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Rubik' , sans-serif;
+    background: #f5f6f9;
+    margin-top: 180px;
+}
+
+:root{
+    --main-color : #fcb700;
+    --dark-color : #222222;
+    --parg-color : #666666;
+    --dark-red : #d01418;
+    --border-color : #6666662a;
+    --name-item : #0066c0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--dark-color);
+    
+}
+
+p{
+    color: var(--parg-color);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+}
+.container{
+    width: 75%;
+    margin: auto;
+}
+
+@media (max-width :1500px) {
+.container{
+    width: 90%;
+}}
+
+header .top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 ;
+}
+header .top-nav .logo img {
+width: 150px;
+}
+
+header .top-nav  .search {
+    width: 500px;
+    border: 2px solid var(--main-color);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+header .top-nav  .search input {
+    padding: 18px 175px 18px 20px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+header .top-nav  .search button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: none;
+    border: none;
+    width: 170px;
+    height: 100%;
+    background-color: #fcb700;
+    color: var(--dark-color);
+    cursor: pointer;
+}
+
+header .top-nav .card_header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content:center ;
+    color: var(--dark-color);
+    border: 1px solid var(--border-color);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+}
+header .top-nav .card_header:hover{
+    background: var(--main-color);
+    color: #fff;
+}
+
+header .top-nav .card_header .count_items{
+    position: absolute;
+    background: var(--main-color);
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    top: -5px;
+    right: 0;
+    color: var(--dark-color);
+    border: 1px solid var(--border-color);
+}
+
+header .top-nav .card_header .total_price p{
+    margin-bottom: 8px;
+}
+
+header nav {
+    border-top: 1px solid var(--border-color);
+}
+
+header .links ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+header .links {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header .links ul li a{
+color: var(--dark-color);
+text-transform: uppercase;
+font-weight: 500;
+font-size: 15px;
+}
+
+header .links ul li{
+position: relative;
+padding: 20px 0;
+}
+header .links ul li::after{
+    content: '';
+    position: absolute;
+    background: var(--main-color);
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+header .links ul li.active::after,
+header .links ul li:hover::after{
+    width: 100%;
+}
+
+header .links  .login_sighup a{
+color: var(--dark-color);
+padding: 10px 20px;
+background-color: var(--main-color);
+margin-left: 10px;
+border-radius: 5px;
+}
+
+/* End Header  */
+
