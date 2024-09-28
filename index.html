@@ -16,7 +16,7 @@
                 <button type="submit">Search</button>
             </form>
             <div class="card_header">
-                <i class="fa-solid fa-basket-shopping"></i>
+                <i  onclick="open_cart()" class="fa-solid fa-basket-shopping"></i>
                 <span class="count_items">0</span>
             </div>
             <div class="total_price">
@@ -25,23 +25,62 @@
             </div>
         </div>
         <nav>
-        <div class="links container">
-            <ul>
-                <li class="active"><a href="">home</a></li>
-                <li><a href="">all products</a></li>
-                <li><a href="">about us</a></li>
-                <li><a href="">contact</a></li>
-            </ul>
-            <div class="login_sighup">
-                <a href="#">login<i class="fa-solid fa-arrow-right-to-bracket"></i></a>
-                <a href="#">sighup<i class="fa-solid fa-user-plus"></i></a>
+            <div class="nav-container container">
+                <div class="links">
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="login_signup">
+                    <a href="#">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                    <a href="#">Signup <i class="fa-solid fa-user-plus"></i></a>
+                </div>
             </div>
-        </div>
         </nav>
     </header>
 
- 
+    <!-- Cart Section -->
+    <div class="cart ">
+        <div class="top_cart">
+            <h3>My Cart <span>(0 Item in Cart)</span></h3>
+            <span onclick="close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
 
-<script src="main.js"></script>
+        <div class="items_in_cart">
+            <div onclick="open_cart()" class="item_cart">
+                <img src="img/product/product-1.jpg" alt="Product 1">
+                <div class="content">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p class="price_cart">$140</p>
+                </div>
+                <button class="delete_item"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="item_cart">
+                <img src="img/product/product-2.jpg" alt="Product 2">
+                <div class="content">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p class="price_cart">$140</p>
+                </div>
+                <button class="delete_item"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <!-- Add more .item_cart as needed -->
+        </div>
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>Cart Subtotal</p>
+                <p class="price_cart_total">$0</p>
+            </div>
+            <div class="button_cart">
+                <a href="#" class="btn_cart">Proceed to Checkout</a>
+                <button class="btn_cart trans_bg">Shop More</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

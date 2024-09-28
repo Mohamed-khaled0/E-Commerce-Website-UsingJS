@@ -1,78 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     text-decoration: none;
 }
 
-body{
-    font-family: 'Rubik' , sans-serif;
+body {
+    font-family: 'Rubik', sans-serif;
     background: #f5f6f9;
     margin-top: 180px;
 }
 
-:root{
-    --main-color : #fcb700;
-    --dark-color : #222222;
-    --parg-color : #666666;
-    --dark-red : #d01418;
-    --border-color : #6666662a;
-    --name-item : #0066c0;
+:root {
+    --main-color: #fcb700;
+    --dark-color: #222222;
+    --parg-color: #666666;
+    --dark-red: #d01418;
+    --border-color: #6666662a;
+    --name-item: #0066c0;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
     color: var(--dark-color);
-    
 }
 
-p{
+p {
     color: var(--parg-color);
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 999;
 }
-.container{
+
+.container {
     width: 75%;
     margin: auto;
 }
 
-@media (max-width :1500px) {
-.container{
-    width: 90%;
-}}
+@media (max-width: 1500px) {
+    .container {
+        width: 90%;
+    }
+}
 
-header .top-nav{
+header .top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0 ;
-}
-header .top-nav .logo img {
-width: 150px;
+    padding: 20px 0;
 }
 
-header .top-nav  .search {
+header .top-nav .logo img {
+    width: 150px;
+}
+
+header .top-nav .search {
     width: 500px;
     border: 2px solid var(--main-color);
     position: relative;
     border-radius: 5px;
     overflow: hidden;
 }
-header .top-nav  .search input {
+
+header .top-nav .search input {
     padding: 18px 175px 18px 20px;
     outline: none;
     border: none;
     width: 100%;
 }
 
-header .top-nav  .search button{
+header .top-nav .search button {
     position: absolute;
     top: 0;
     right: 0;
@@ -80,17 +85,23 @@ header .top-nav  .search button{
     border: none;
     width: 170px;
     height: 100%;
-    background-color: #fcb700;
+    background-color: var(--main-color);
     color: var(--dark-color);
     cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+header .top-nav .search button:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    border-left: 2px solid var(--border-color);
 }
 
 header .top-nav .card_header {
     display: flex;
     gap: 10px;
     align-items: center;
-    text-align: center;
-    justify-content:center ;
     color: var(--dark-color);
     border: 1px solid var(--border-color);
     font-size: 20px;
@@ -99,15 +110,18 @@ header .top-nav .card_header {
     line-height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
     position: relative;
+    justify-content: center;
+
 }
-header .top-nav .card_header:hover{
+
+header .top-nav .card_header:hover {
     background: var(--main-color);
     color: #fff;
 }
 
-header .top-nav .card_header .count_items{
+header .top-nav .card_header .count_items {
     position: absolute;
     background: var(--main-color);
     width: 20px;
@@ -122,12 +136,20 @@ header .top-nav .card_header .count_items{
     border: 1px solid var(--border-color);
 }
 
-header .top-nav .card_header .total_price p{
+header .top-nav .total_price p {
     margin-bottom: 8px;
+    text-align: right;
 }
 
 header nav {
     border-top: 1px solid var(--border-color);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
 }
 
 header .links ul {
@@ -136,24 +158,20 @@ header .links ul {
     gap: 70px;
 }
 
-header .links {
-display: flex;
-justify-content: space-between;
-align-items: center;
+header .links ul li a {
+    color: var(--dark-color);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+    padding: 10px 0;
 }
 
-header .links ul li a{
-color: var(--dark-color);
-text-transform: uppercase;
-font-weight: 500;
-font-size: 15px;
+header .links ul li {
+    position: relative;
 }
 
-header .links ul li{
-position: relative;
-padding: 20px 0;
-}
-header .links ul li::after{
+header .links ul li::after {
     content: '';
     position: absolute;
     background: var(--main-color);
@@ -161,21 +179,188 @@ header .links ul li::after{
     bottom: 0;
     left: 0;
     height: 2px;
-    transition: 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
 }
 
 header .links ul li.active::after,
-header .links ul li:hover::after{
+header .links ul li:hover::after {
     width: 100%;
 }
 
-header .links  .login_sighup a{
-color: var(--dark-color);
-padding: 10px 20px;
-background-color: var(--main-color);
-margin-left: 10px;
-border-radius: 5px;
+.login_signup { /* Corrected class selector */
+    display: flex;
+    gap: 15px;
 }
 
-/* End Header  */
+.login_signup a {
+    color: var(--dark-color);
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
 
+.login_signup a:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 0.1px solid var(--main-color);
+}
+
+/* Cart */
+.cart {
+    position: fixed;
+    width: 400px;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    background: #fff;
+    z-index: 1000;
+    padding: 30px;
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow */
+    transition: 0.3s ease;
+}
+
+.cart.active{
+    right: 0;
+}
+.cart .top_cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.cart .close_cart i {
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cart .close_cart i:hover {
+    color: var(--dark-red);
+}
+
+.cart .top_cart h3 {
+    font-size: 20px;
+    color: var(--dark-color);
+}
+
+.cart .top_cart h3 span {
+    font-size: 14px;
+    color: var(--parg-color);
+    font-weight: normal;
+}
+
+.cart .items_in_cart {
+    padding: 20px 0;
+    flex-grow: 1; /* Allows this section to expand and fill available space */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+}
+
+.cart .item_cart {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.cart .item_cart:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cart .item_cart img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart .item_cart .content {
+    flex-grow: 1;
+}
+
+.cart .item_cart h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.cart .item_cart .price_cart {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.cart .delete_item {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--dark-red);
+    transition: color 0.3s ease;
+}
+
+.cart .delete_item:hover {
+    color: var(--main-color);
+}
+
+.cart .bottom_cart {
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+.cart .bottom_cart .total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cart .bottom_cart .price_cart_total {
+    color: var(--main-color);
+}
+
+.cart .button_cart {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart .button_cart .btn_cart {
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    color: var(--dark-color);
+    padding: 15px 0;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: var(--main-color);
+    transition: background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.cart .button_cart .btn_cart:hover {
+    background: transparent;
+    color: var(--main-color);
+}
+
+.cart .button_cart .trans_bg {
+    background: transparent;
+    border-color: var(--dark-color);
+    color: var(--dark-color);
+}
+
+.cart .button_cart .trans_bg:hover {
+    background: var(--main-color);
+    color: #fff;
+    border: var(--main-color);
+}
