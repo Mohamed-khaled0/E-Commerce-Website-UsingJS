@@ -429,3 +429,45 @@ object-position: left top;
 
 
 /* End Slider Section */
+
+/* Start Features */
+.features{
+    margin: 50px 0;
+}
+
+.features .container{
+    display: flex;
+    background-color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.features .container .feature_item{
+    width: 18%;
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.features .container .feature_item img{
+    width: 50px;
+}
+
+
+.features .container .feature_item h4{
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+
+.features .container .feature_item p{
+    font-size: 12px;
+}
+
+
+/* End Features */
