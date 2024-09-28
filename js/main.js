@@ -6,3 +6,4 @@ function open_cart(){
 function close_cart(){
     cart.classList.remove("active");
 }
+
