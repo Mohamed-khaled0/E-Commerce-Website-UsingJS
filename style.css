@@ -201,9 +201,7 @@ header .links ul li:hover::after {
 }
 
 .login_signup a:hover {
-    background-color: transparent;
-    color: var(--main-color);
-    border: 0.1px solid var(--main-color);
+    color: white;
 }
 
 /* Cart */
@@ -364,3 +362,49 @@ header .links ul li:hover::after {
     color: #fff;
     border: var(--main-color);
 }
+
+/* End Cart  */
+
+/* Start Slider Section */
+
+
+
+.slider .container .side_bar{
+width: 300px;
+background: white;
+display: flex;
+flex-direction: column;
+
+}
+
+
+
+.slider .container .side_bar h2 {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    grid: 15px;
+}
+
+.slider .container .side_bar a {
+    padding:  15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-color);
+    border-top: 1px solid var(--border-color) ;
+    transition: 0.3s ease-in-out;
+}
+
+.slider .container .side_bar a:hover{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+/* End Slider Section */
