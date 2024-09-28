@@ -6,6 +6,10 @@
     <title>Topoco</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+ 
 </head>
 <body>
     <header>
@@ -95,8 +99,93 @@
                 <a href="">Watches & Jewelry</a>
                 <a href="">TV & Audios</a>
             </div>
+             <!-- Swiper -->
+    <div class="slide-swp mySwiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="#"><img src="img/slider-01.jpg" alt=""></a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#"><img src="img/slider-02.jpg" alt=""></a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#"><img src="img/slider-03.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
         </div>
     </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature_item">
+                <img src="img/features1.png" alt="">
+                <div class="text">
+                    <h4>Free Shipping</h4>
+                    <p>Free shipping on all orders</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="feature_item">
+                <img src="img/features2.png" alt="">
+                <div class="text">
+                    <h4>Free Shipping</h4>
+                    <p>Free shipping on all orders</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="feature_item">
+                <img src="img/features3.png" alt="">
+                <div class="text">
+                    <h4>Free Shipping</h4>
+                    <p>Free shipping on all orders</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="feature_item">
+                <img src="img/features4.png" alt="">
+                <div class="text">
+                    <h4>Free Shipping</h4>
+                    <p>Free shipping on all orders</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="feature_item">
+                <img src="img/features5.png" alt="">
+                <div class="text">
+                    <h4>Free Shipping</h4>
+                    <p>Free shipping on all orders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets :true,
+        clickable:true
+      },
+      autoplay:{
+        delay:2500,
+      },
+      loop:true
+    });
+  </script>
     <script src="main.js"></script>
 </body>
 </html>
