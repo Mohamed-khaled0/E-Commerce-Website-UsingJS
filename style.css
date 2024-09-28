@@ -37,7 +37,7 @@ header {
     right: 0;
     background: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    z-index: 999;
+    z-index: 1111;
 }
 
 .container {
@@ -469,5 +469,37 @@ object-position: left top;
     font-size: 12px;
 }
 
-
 /* End Features */
+
+/* Start Banner Section */
+.banner .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.banner .container .banner_img{
+    width: 32%;
+}
+.banner .container .banner_img img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End Banner Section */
