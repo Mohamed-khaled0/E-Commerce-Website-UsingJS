@@ -750,3 +750,67 @@ background: var(--main-color);
 /* End Slider for Products  Section*/
 
 
+/* Start Newsletter Section */
+
+.newsletter{
+    background: #fff;
+}
+.newsletter .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.newsletter .text{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter .text img {
+    width: 100px;
+}
+.newsletter .text h4 {
+font-size: 20px;
+font-weight: 500;
+}
+.newsletter .text p{
+    margin: 12px 0;
+}
+.newsletter .text h6 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.newsletter .newsletter_form{
+width: 40%;
+border: 2px solid var(--main-color);
+border-radius: 5px;
+overflow: hidden;
+position: relative;
+}
+.newsletter .newsletter_form input {
+padding: 20px 175px 20px 20px;
+outline: none;
+border: none;
+width: 100%;
+
+
+}
+.newsletter .newsletter_form button {
+    background: var(--main-color);
+    outline: none;
+    border: none;
+    width: 170px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+
+
+/* End Newsletter Section */
