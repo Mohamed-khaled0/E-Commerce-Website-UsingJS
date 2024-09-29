@@ -639,6 +639,26 @@ transition: 0.3s ease;
     cursor: pointer;
     transition: 0.3s ease;
 }
+.product .icons i.active{
+    background: var(--main-color);
+    cursor: auto;
+    pointer-events: none;
+    position: relative;
+}
+
+.product .icons i.active::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #0000004f;
+z-index: 10;
+overflow: hidden;
+border-radius: 50%;
+}
+
 .product .icons i:hover{
 background: var(--main-color);
 }
