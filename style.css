@@ -44,10 +44,6 @@ header {
     width: 75%;
     margin: auto;
 }
-.container .logo{
-    width: 100px;
-    height: 100px;
-}
 
 @media (max-width: 1500px) {
     .container {
@@ -751,47 +747,6 @@ background: var(--main-color);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* End Slider for Products  Section*/
+
 
