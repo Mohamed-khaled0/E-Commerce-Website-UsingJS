@@ -65,10 +65,6 @@ function getCartItems(){
 
 
 
-
-
-
-
 function remove_from_cart(index){
     product_cart.splice(index,1);
     getCartItems();
@@ -86,3 +82,13 @@ function remove_from_cart(index){
 }
 
 
+
+// Back to top function
+
+let back_to_top = document.querySelector('.back_to_top');
+back_to_top.addEventListener("click" , function(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    })
+})

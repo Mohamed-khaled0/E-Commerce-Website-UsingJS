@@ -812,5 +812,124 @@ width: 100%;
 }
 
 
-
 /* End Newsletter Section */
+
+/* Start Footer Section */
+
+.back_to_top{
+background: #4d5669;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.back_to_top p {
+font-size: 18px;
+text-transform: uppercase;
+cursor: pointer;
+color: white;
+font-weight: bold;
+}
+
+footer{
+    background-color: #394150;
+
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+
+}
+
+footer .container .big_row{
+    width: 30%;
+}
+footer .container .big_row .hotline{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    gap: 10px;
+}
+
+footer .container .big_row .hotline i {
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+footer .container .big_row .hotline h5{
+color: white;
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+footer .container .big_row .hotline h6{
+    color: var(--main-color);
+    font-size: 18px;
+    }
+    
+
+    footer .container .big_row  p{
+        width: 90%;
+        color: #b1b1b1;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    footer .container .row {
+        width: 22%;
+    }
+
+
+    footer .container .row h4 {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    footer .container .row .links {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    footer .container .row .links a{
+        color: #b1b1b1;
+        font-size: 14px;
+        position: relative;
+        left: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    footer .container .row .links a:hover {
+        left: 8px;
+        color: var(--main-color);
+    }
+
+
+    footer .bottom_footer {
+        background: #202935;
+    }
+    footer .bottom_footer .container{
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    footer .bottom_footer .container span{
+        color: var(--main-color);
+    }
+    footer .bottom_footer .container .payments_imgs{
+        display: flex;
+        gap: 10px;
+
+    }
+    footer .bottom_footer .container .payments_imgs img{
+        filter: grayscale(100%);
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    footer .bottom_footer .container .payments_imgs img:hover{
+        filter: grayscale(0%);
+    }
+/* End Footer Section */
