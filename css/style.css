@@ -14,15 +14,19 @@ body {
     margin-top: 180px;                      /* Top margin for spacing */
 }
 
-/* CSS Variables for Consistent Color Scheme */
 :root {
-    --main-color: #eea13c;      /* Soft Gold - Main Accent Color */
-    --dark-color: #2c2a29;      /* Charcoal Black - Dark Background */
-    --parg-color: #6b5b4e;      /* Warm Taupe - Paragraph/Text Color */
-    --highlight-color: #f0e3c7; /* Creamy Beige - For Important Highlights */
-    --border-color: #e6d8c1;    /* Light Champagne - Border Color */
-    --name-item: #a1866f;       /* Soft Brown - Link/Item Names */
+    --main-color: #d1ce17;       /* Bright Yellow */
+    --secondary-color: #f0f0f0;  /* Light Gray */
+    --dark-color: #333333;       /* Dark Charcoal */
+    --parg-color: #1d1a1a;       /* Medium Gray */
+    --highlight-color: #ffffff;  /* Pure White */
+    --border-color: #c0c0c0;     /* Light Gray */
+    --name-item: #644125;        /* Dark Orange */
 }
+
+
+
+
 
 /* Heading Styles */
 h1, h2, h3, h4, h5, h6 {
@@ -32,10 +36,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Paragraph Styles */
 p {
-    color: var(--parg-color);   /* Applying paragraph text color */
-    line-height: 1.6;           /* Improving readability */
-    margin-bottom: 15px;        /* Adding some spacing below paragraphs */
+    color: var(--paragraph-color);   /* Applying paragraph text color */
+    line-height: 1.6;                /* Improving readability */
+    margin-bottom: 15px;             /* Adding some spacing below paragraphs */
 }
+
 
 
 header {
@@ -1754,8 +1759,8 @@ color: var(--dark-color);
 
 .contact-form label {
     font-weight: bold;
-    color: var(--name-item);    /* Using the soft brown for labels */
     margin-bottom: 5px;
+    color: var(--dark-color);
 }
 
 .contact-form input,
