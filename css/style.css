@@ -1,6 +1,5 @@
 /* Importing Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
 /* Global Reset and Styling */
 * {
     box-sizing: border-box;
@@ -10,7 +9,7 @@
 }
 
 body {
-    font-family: 'Playfair Display', serif; /* Applying Playfair Display font for elegance */
+    font-family: 'Rubik' , sans-serif;
     background-color: #faf9f6;              /* Soft Light Beige background */
     margin-top: 180px;                      /* Top margin for spacing */
 }
@@ -918,7 +917,7 @@ footer .container .big_row .hotline h6{
 
 
     footer .bottom_footer {
-        background: #202935;
+        background: #2f3b4b;
     }
     footer .bottom_footer .container{
         align-items: center;
@@ -1727,4 +1726,116 @@ color: var(--dark-color);
 
 
 /* End Responsive for Checkout Page */
+
+/* Contact Us Section Styling */
+.contact-us {
+    padding: 40px 20px;
+    border: 1px solid var(--border-color);    /* Border color consistent with root */
+    border-radius: 8px;
+}
+
+.contact-us h1 {
+    color: var(--dark-color);  /* Main dark color for heading */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;          /* Slightly bolder for emphasis */
+}
+
+.contact-form {
+    display: grid;
+    gap: 15px;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: var(--name-item);    /* Using the soft brown for labels */
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid var(--border-color);  /* Border color from root */
+    border-radius: 5px;
+    width: 100%;
+    font-family: inherit;
+    background-color: white;
+    color: var(--parg-color);   /* Paragraph color for input text */
+    transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--main-color); /* Soft gold border on focus */
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.form-btn {
+    padding: 12px 20px;
+    background-color: var(--main-color); /* Main accent color for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.form-btn:hover {
+    background-color: var(--dark-color); /* Change to dark background on hover */
+    color: var(--highlight-color);       /* Creamy beige text on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 20px 10px;
+    }
+
+    .form-btn {
+        width: 100%; /* Make the button full-width on smaller screens */
+    }
+}
+
+/* End Contact Us  */
+
+/* About us  */
+
+/* About Us Section Styling */
+.about-us {
+    padding: 40px 20px;
+    border: 1px solid var(--border-color);    /* Border color consistent with root */
+    border-radius: 8px;
+}
+
+.about-us h1 {
+    color: var(--dark-color);   /* Main dark color for the heading */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;           /* Slightly bolder for emphasis */
+}
+
+.about-us p {
+    color: var(--parg-color);   /* Paragraph text color from root */
+    line-height: 1.8;           /* Slightly increased line height for readability */
+    margin-bottom: 15px;
+    text-align: justify;        /* Justifying the text for a cleaner look */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us {
+        padding: 20px 10px;
+    }
+}
 

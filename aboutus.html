@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Learn more about Topoco - Your One-Stop Online Shop">
+    <meta name="keywords" content="Topoco, about us, company, online shopping, mission, vision">
+    <meta name="author" content="Mohamed Khaled">
+    <title>About Us - Topoco</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container top-nav">
+            <a href="index.html" class="logo"><img src="img/logo-black.png" alt="logo"></a>
+            <form action="" class="search">
+                <input type="search" name="" id="" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="card_header">
+                <i  onclick="open_cart()" class="fa-solid fa-basket-shopping"></i>
+                <span class="count_items">0</span>
+            </div>
+            <div class="total_price">
+                <p>My Cart:</p>
+                <p class="price_cart">$0</p>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container container">
+                <div class="links">
+                    <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+                    <ul id="menu">
+                        <span  onclick="close_menu()" class="bg-overlay"></span>
+                        <i  onclick="close_menu()"  class="fa-regular fa-circle-xmark btn_close_menu"></i>
+                        <img class="logo_menu" src="img/logo-black.png" alt="">
+                        <li ><a href="index.html">Home</a></li>
+                        <li><a href="all_products.html" >All Products</a></li>
+                        <li class="active" ><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="login_signup">
+                    <a href="login.html">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                    <a href="signup_page.html">Signup <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Us Content -->
+    <section class="about-us">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Welcome to Topoco, your number one source for all things shopping. We're dedicated to providing you the best online shopping experience, with an emphasis on quality, customer service, and uniqueness.</p>
+            <p>Founded in 2024 by Mohamed Khaled, Topoco has come a long way from its beginnings. When Mohamed first started out, his passion for providing high-quality products drove him to start his own business.</p>
+            <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img src="img/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>Hotline Free 24/24:</h5>
+                        <h6>(+100) 123 456 7890</h6>
+                    </div>
+                </div>
+                <p>Your satisfaction is our priority.</p>
+            </div>
+
+            <div class="row">
+                <h4>FQA & Help</h4>
+                <div class="links">
+                    <a href="#">FAQ's</a>
+                    <a href="#">Ordering Tracking</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Events</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>Copyright &copy; <span>Topico </span> All rights reserved</p>
+                <div class="payments_imgs">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

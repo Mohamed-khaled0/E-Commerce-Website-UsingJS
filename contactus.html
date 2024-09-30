@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Contact Topoco - Get in touch with us">
+    <meta name="keywords" content="Topoco, contact, get in touch, support, customer service">
+    <meta name="author" content="Mohamed Khaled">
+    <title>Contact Us - Topico</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login_register.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container top-nav">
+            <a href="index.html" class="logo"><img src="img/logo-black.png" alt="logo"></a>
+            <form action="" class="search">
+                <input type="search" name="" id="" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="card_header">
+                <i  onclick="open_cart()" class="fa-solid fa-basket-shopping"></i>
+                <span class="count_items">0</span>
+            </div>
+            <div class="total_price">
+                <p>My Cart:</p>
+                <p class="price_cart">$0</p>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container container">
+                <div class="links">
+                    <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+                    <ul id="menu">
+                        <span  onclick="close_menu()" class="bg-overlay"></span>
+                        <i  onclick="close_menu()"  class="fa-regular fa-circle-xmark btn_close_menu"></i>
+                        <img class="logo_menu" src="img/logo-black.png" alt="">
+                        <li ><a href="index.html">Home</a></li>
+                        <li><a href="all_products.html" >All Products</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li class="active"><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="login_signup">
+                    <a href="login.html">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                    <a href="signup_page.html">Signup <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="contact-us">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form action="" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="form-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img src="img/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>Hotline Free 24/24:</h5>
+                        <h6>(+100) 123 456 7890</h6>
+                    </div>
+                </div>
+                <p>We are always here to help.</p>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>Copyright &copy; <span>Topico </span> All rights reserved</p>
+                <div class="payments_imgs">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
