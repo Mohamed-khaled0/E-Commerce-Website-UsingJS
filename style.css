@@ -811,7 +811,6 @@ width: 100%;
 
 }
 
-
 /* End Newsletter Section */
 
 /* Start Footer Section */
@@ -822,6 +821,7 @@ height: 50px;
 display: flex;
 justify-content: center;
 align-items: center;
+cursor: pointer;
 }
 
 .back_to_top p {
@@ -1157,3 +1157,109 @@ header .links  .btn_open_menu,
 
 
 }
+
+
+/* Start Item details page */
+.item_details{
+    background: white;
+    padding: 50px 0;
+}
+
+.item_details .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_details .img_item {
+    width: 40%;
+}
+
+.item_details .img_item .big_img {
+    width: 100%;
+}
+.item_details .img_item .sm_imgs{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+
+}
+
+.item_details .img_item .sm_imgs img{
+    width: 24%;
+}
+.item_details .details_item {
+    width: 58%;
+}
+
+.item_details .details_item h1{
+margin-bottom: 30px;
+}
+.item_details .details_item h5{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    }
+
+    .item_details .details_item h5 span{
+        color: var(--main-color);
+    }
+
+    .item_details .details_item .price {
+        justify-content: left;
+        margin: 20px 0;
+        gap: 20px;
+    }
+
+    .item_details .details_item .price p {
+        font-size: 22px;
+    }
+
+    .item_details .details_item .text_p{
+        line-height: 1.4;
+    }
+
+    .item_details .details_item h4{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .item_details .details_item button {
+        border: none;
+        outline: none;
+        background: var(--main-color);
+        font-weight: bold;
+        padding: 16px 32px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 30px 0;
+        font-size: 16px;
+        text-transform:capitalize;
+        transition: 0.3s ;
+    }
+    .item_details .details_item button:hover{
+        scale: 1.1;
+    }
+
+    .item_details .details_item .icons{
+        display: flex;
+        gap: 10px;
+    }
+    .item_details .details_item .icons i {
+        width: 50px;
+        height: 50px;
+        background: white;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        border: 1px solid var(--border-color);
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .item_details .details_item .icons i:hover{
+        background: var(--main-color);
+    }
+    
+/* End Item details page */
+
+/* Respo */

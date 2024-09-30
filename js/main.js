@@ -103,3 +103,9 @@ back_to_top.addEventListener("click" , function(){
 })
 
 
+// Functions for items details page
+// change item image
+let bigImage = document.getElementById('bigImg');
+function changeItemImage(img){
+    bigImage.src = img;
+}
