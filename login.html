@@ -9,9 +9,9 @@
     <meta name="author" content="Mohamed Khaled">
     <title>Topoco - Your One-Stop Online Shop</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login_register.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
-<!-- Link Swiper's CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
  
 </head>
@@ -76,93 +76,43 @@
             </div>
         </div>
     </div>
+  
+    <section class="signin sec_form">
+        <div class="form_container">
+            <p class="title">Welcome back</p>
+            <form action="" class="form">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <p class="page-like">
+                    <a href="#" class="page-link-label"> Forgot Password?</a>
+                </p>
 
-    <div class="item_details">
-        <div class="container">
-            <div class="img_item">
-                <div class="big_img">
-                    <img id="bigImg" src="img/product/product-1.jpg" alt="">
-                </div>
-
-                <div class="sm_imgs">
-                    <img  onclick="changeItemImage(this.src)" src="img/product/product-1.jpg" alt="">
-                    <img  onclick="changeItemImage(this.src)" src="img/product/product-2.jpg" alt="">
-                    <img  onclick="changeItemImage(this.src)" src="img/product/product-3.jpg" alt="">
-                    <img  onclick="changeItemImage(this.src)" src="img/product/product-4.jpg" alt="">
-
-                </div>
-            </div>
-
-            <div class="details_item">
-                <h1 class="name">Original Mobile Android Dual SIM Smart Phone G3
-                </h1>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="price">
-                    <p><span>120.0$</span></p>
-                    <p class="old_price">170$</p>
-                </div>
-                <h5>Availability : <span>In Stock</span></h5>
-                <h5>SKU: <span>Samsung S99 Ultra</span></h5>
-                <p class="text_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae debitis vero voluptas aperiam temporibus saepe minus tempora in, explicabo veniam eos, molestias perferendis corporis, maxime unde sit cum atque voluptate?</p>
-                <h4>Hurry Up ! Only 98 product left in stock</h4>
-                <button>Add to cart <i class="fa-solid fa-cart-arrow-down"></i></button>
-                <div class="icons">
-                    <span><i class="fa-regular fa-heart"></i></span>
-                    <span><i class="fa-solid fa-sliders"></i></span>
-                    <span><i class="fa-solid fa-print"></i></span>
-                    <span><i class="fa-solid fa-share-nodes"></i></span>
-
-                </div>
-            </div>
-        </div>
-    </div>
-   
-      <section class="slide slide_sale">
-        <div class="container">
-            <div class="sale_sec mySwiper">
-                <div class="top_slide">
-                    <h2>On sale <span>products</span></h2>
-                </div>
-
-                <div  id="swiper_items_sale" class="products swiper-wrapper">
-                </div>
-
-                <div class="swiper-button-next btn_Swip"></div>
-                <div class="swiper-button-prev btn_Swip"></div>
-            </div>
-
-        </div>
-      </section>
-
-
-
-      <div class="back_to_top">
-        <p>back to top</p>
-      </div>
-
-      <div class="newsletter">
-        <div class="container">
-            <div class="text">
-                <img src="img/icon_email.png" alt="">
-                <div class="content">
-                    <h4>Sign up to newsletter</h4>
-                    <p>Get email updates about our shop ... ands receive</p>
-                    <h6>30$ Coupon for first shopping</h6>
-                </div> 
-            </div>
-
-            <form action="" class="newsletter_form">
-                <input type="email" placeholder="Enter your email here">
-                <button type="submit">subscribe</button>
+                <button class="form-btn">Login</button>
             </form>
+            <p class="sign-up-label">
+                Don't have an account? <a href="#" class="sign-up-link">sign up</a>
+            </p>
+
+            <div class="buttons-container">
+                <div class="apple-login-button">
+                    <i class="fa-brands fa-apple"></i>
+                    <span>Login with apple</span>
+                </div>
+
+                <div class="google-login-button">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Login with google</span>
+                </div>
+
+                <div class="facebook-login-button">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Login with facebook</span>
+                </div>
+            </div>
         </div>
-      </div>
+    </section> 
+
+
 
 <footer>
     <div class="container">
@@ -233,12 +183,7 @@
         </div>
     </div>
 </footer>
-    
-     <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="js/swiper.js"></script>
-  <script src="js/items.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
