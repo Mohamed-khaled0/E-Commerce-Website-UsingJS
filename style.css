@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* Global Reset and Styling */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,27 +10,34 @@
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
-    background: #f5f6f9;
-    margin-top: 180px;
+    font-family: 'Poppins', sans-serif; /* Applying Poppins font */
+    background-color: #fefde9;          /* Light Cream background */
+    margin-top: 180px;                  /* Top margin for spacing */
 }
 
+/* CSS Variables for Consistent Color Scheme */
 :root {
-    --main-color: #fcb700;
-    --dark-color: #222222;
-    --parg-color: #666666;
-    --dark-red: #d01418;
-    --border-color: #6666662a;
-    --name-item: #0066c0;
+    --main-color: #f5dd06;      /* Amber Yellow - Main Accent Color */
+    --dark-color: #343a40;      /* Dark Charcoal - Dark Background */
+    --parg-color: #808f9b;      /* Subtle Gray - Paragraph/Text Color */
+    --highlight-color: #c7b93b; /* Bright Yellow - For Important Highlights */
+    --border-color: #E0E0E0;    /* Light Gray - Border Color */
+    --name-item: #787673;       /* Deep Amber - Link/Item Names */
 }
 
+/* Heading Styles */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--dark-color);
+    color: var(--dark-color);   /* Applying the main dark color */
+    margin-bottom: 10px;        /* Adding some spacing below headings */
 }
 
+/* Paragraph Styles */
 p {
-    color: var(--parg-color);
+    color: var(--parg-color);   /* Applying paragraph text color */
+    line-height: 1.6;           /* Improving readability */
+    margin-bottom: 15px;        /* Adding some spacing below paragraphs */
 }
+
 
 header {
     position: fixed;
@@ -1422,8 +1431,93 @@ color: var(--main-color);
     color: var(--main-color);
 }
 
-
-
-
 /* End Filter Section */
 /* End all products page */
+
+/* Start responsive for filter section */
+
+@media (max-width:1500px) {
+    .all_products .products_div .product{
+        width: 31%;
+    }
+
+    .all_products .btn_filter{
+        display: none;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .all_products .container {
+        position: relative;
+        padding-top: 60px;
+    }
+
+    .all_products .filter {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 40%;
+    opacity: 0;
+    z-index: 100;
+    transition: 0.3s opacity ease-in-out;
+}
+
+    .all_products .filter.active{
+        z-index: 100;
+        opacity: 1;
+    }
+
+    .all_products .products_div {
+        width: 100%;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .all_products .btn_filter{
+        display: block;
+        position: absolute;
+        top: 0;
+        padding: 12px 30px;
+        background: var(--main-color);
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+}
+
+
+
+@media (max-width:650px) {
+    .all_products .products_div .product {
+        width: 48%;
+    }
+
+    .top_page h1{
+        font-size: 22px;
+    }
+    .top_page p{
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .top_page{
+        padding-top: 40px;
+    }
+
+    .all_products .filter {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:400px) {
+    .all_products .filter {
+        width: 100%;
+    }
+
+}
+
+
+/* End responsive for filter section */
