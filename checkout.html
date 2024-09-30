@@ -74,177 +74,72 @@
             </div>
         </div>
     </div>
-
-   <div class="top_page">
-    <div class="container">
-        <h1>Experience the Future of Technology with our Topico.</h1>
-        <p>Find everything you need to transform your home into a smart, connected space . Our Topico store offers a wide range of devices to fit your needs </p>
-    </div>
-   </div>
-   
-   <section class="all_products">
-    <div class="container">
-        <span onclick="open_close_filter()" class="btn_filter ">
-            Filters <i class="fa-solid fa-filter "></i>
-        </span>
-        <div class="filter">
-            <h2>Filter</h2>
-
-            <!-- Category Section -->
-            <div class="filter_items">
-                <h4>Category</h4>
-                <div class="content">
-
-                    <div class="item">
-                        <span>Phones</span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span>Tablets</span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span>Electronics</span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span>TV</span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span>Fashion</span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span>Watches</span>
-                        <input type="checkbox">
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Brand Section -->
-            <div class="filter_items">
-                <h4>Brand</h4>
-                <div class="content">
-
-                    <div class="item">
-                        <span>Samsung</span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span>Iphone</span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span>Intel</span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span>Oppo</span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span>Xiaomi</span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span>Huawei</span>
-                        <input type="checkbox">
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Color Section -->
-            <div class="filter_items">
-                <h4>Color</h4>
-                <div class="content">
-
-                    <div class="item">
-                        <span class="color" style="background: red;"></span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span class="color" style="background: orangered;"></span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span class="color" style="background: orange;"></span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span class="color" style="background: black;"></span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span class="color" style="background: blue;"></span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span class="color" style="background: green;"></span>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="item">
-                        <span class="color" style="background: yellow;"></span>
-                        <input type="checkbox">
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        
-        <div id="products_div" class="products_div">
-        </div>
-    </div>
-
-    <div class="pagination">
-        <span class="btn_page prev"><i class="fa-solid fa-backward-step"></i></span>
-        <a href=""><span class="num_page active">1</span></a>
-        <a href="#"><span class="num_page ">2</span></a>
-        <a href="#"><span class="num_page ">3</span></a>
-        <span class="btn_page next"><i class="fa-solid fa-forward-step"></i></span>
-
-    </div>
-   </section>
-      <div class="back_to_top">
-        <p>back to top</p>
-      </div>
-
-      <div class="newsletter">
+  
+    <section class="checkout">
         <div class="container">
-            <div class="text">
-                <img src="img/icon_email.png" alt="">
-                <div class="content">
-                    <h4>Sign up to newsletter</h4>
-                    <p>Get email updates about our shop ... ands receive</p>
-                    <h6>30$ Coupon for first shopping</h6>
-                </div> 
-            </div>
+            <form action="">
+                <div class="address">
+                    <h2>Delivery address</h2>
+                    <div class="inputs">
+                        <label for="">Email</label>
+                        <input type="email" name="" id="" placeholder="Enter your email">
 
-            <form action="" class="newsletter_form">
-                <input type="email" placeholder="Enter your email here">
-                <button type="submit">subscribe</button>
+                        <label for="">Name</label>
+                        <input type="text" name="" id="" placeholder="Enter your name">
+
+                        <label for="">Address</label>
+                        <input type="text" name="" id="" placeholder="Enter your address">
+
+                        <label for="">Phone</label>
+                        <input type="number" name="" id="" placeholder="Enter your phone">
+                    </div>
+                </div>
+
+                <div class="coupon">
+                    <h2>Coupon Code</h2>
+                    <div class="inputs">
+                        <label for="">Coupon Code</label>
+                        <input type="text" placeholder="Enter your code here">
+                    </div>
+                </div>
             </form>
+            
+            <div class="ordersummary">
+                <h1>Order Summary</h1>
+                <div class="items">
+                    <div class="item_cart">
+                        <img src="img/product/product-1.jpg" alt="">
+
+                        <div class="content">
+                            <h4>Original Mobile Android Dual SIM Smart Phone G3</h4>
+                            <p class="price_cart">Price : <span>185$</span></p>
+                        </div>
+                    </div>
+
+                    <div class="item_cart">
+                        <img src="img/product/product-2.jpg" alt="">
+
+                        <div class="content">
+                            <h4>Samsung Mobile </h4>
+                            <p class="price_cart">Price : <span>145$</span></p>
+                        </div>
+                    </div>
+
+                    <div class="total">
+                        <p>Total</p>
+                        <span>$330</span>
+                    </div>
+
+                    <div class="button_div">
+                        <button>Place Order</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    
+
+
 
 <footer>
     <div class="container">
@@ -316,8 +211,6 @@
     </div>
 </footer>
 
-<script src="js/all_products.js"></script>
-    <script src="js/main.js"></script>
-
+    <script src="../js/main.js"></script>
 </body>
 </html>
