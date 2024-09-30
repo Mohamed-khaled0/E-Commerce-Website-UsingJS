@@ -15,13 +15,13 @@ body {
 }
 
 :root {
-    --main-color: #d1ce17;       /* Bright Yellow */
+    --main-color: #FCB700;       /* Bright Yellow */
     --secondary-color: #f0f0f0;  /* Light Gray */
     --dark-color: #333333;       /* Dark Charcoal */
     --parg-color: #1d1a1a;       /* Medium Gray */
     --highlight-color: #ffffff;  /* Pure White */
     --border-color: #c0c0c0;     /* Light Gray */
-    --name-item: #644125;        /* Dark Orange */
+    --name-item: #b5743e;        /* Dark Orange */
 }
 
 
