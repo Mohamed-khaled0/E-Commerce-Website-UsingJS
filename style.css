@@ -1262,4 +1262,40 @@ margin-bottom: 30px;
     
 /* End Item details page */
 
-/* Respo */
+/* Start Responsive for item details page section */
+
+
+
+@media (max-width:1000px) {
+    .item_details .container{
+        flex-direction: column;   
+    }
+
+    .item_details .img_item{
+        width:50% ;
+        margin-bottom: 40px;
+    }
+
+    .item_details .details_item{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:700) {
+
+  .item_details .img_item{
+        width:80% ;
+        margin-bottom: 40px;
+    }
+
+
+}
+
+@media (max-width:500) {
+    .item_details .details_item h1{
+        font-size: 12px;
+    }
+  }
+
+/* End responsive for item details page section*/
