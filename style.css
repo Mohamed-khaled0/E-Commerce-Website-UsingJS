@@ -1328,11 +1328,7 @@ justify-content: space-between;
 }
 
 
-.all_products  .container .filter{
-    background: white;
-    width: 200px;
-    height: 300px;
-}
+
 .all_products .products_div{
     width: calc(100% - 300px);
     display: flex;
@@ -1347,15 +1343,87 @@ justify-content: space-between;
 
 
 
+/*Start Filter Section */
+.all_products .filter{
+    text-transform: capitalize;
+    background: white;
+    padding: 20px 25px;
+    width: 280px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+
+}
+
+.all_products .filter input:checked{
+accent-color: var(--main-color);
+}
+
+
+.all_products .filter h4 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+    padding:10px ;
+}
+
+.all_products .filter span {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.all_products .filter .filter_items .item{
+    display: flex;
+justify-content: space-between;
+margin-top: 10px;
+align-items: center;
+}
+
+.all_products .filter .filter_items .item .color{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+
+.pagination{
+    padding: 15px 20px;
+    background: white;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.pagination .btn_page {
+padding: 0 15px;
+font-size: 22px;
+cursor: pointer;
+transition: 0.3s ease-in-out;
+}
+
+.pagination .btn_page:hover{
+color: var(--main-color);
+}
+
+
+.pagination .num_page{
+    border: 1px solid transparent;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: var(--parg-color);
+}
+.pagination .num_page.active, 
+.pagination .num_page:hover{
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    color: var(--main-color);
+}
 
 
 
 
-
-
-
-
-
-
-
+/* End Filter Section */
 /* End all products page */
