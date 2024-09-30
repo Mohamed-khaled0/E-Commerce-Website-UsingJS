@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Topoco is an online shop that offers a wide variety of products, ranging from electronics to fashion, with great deals and discounts. Shop now!">
+    <meta name="keywords" content="Topoco, online shopping, electronics, fashion, deals, discounts, gadgets, clothing, accessories">
+    <meta name="author" content="Mohamed Khaled">
+    <title>Topoco - Your One-Stop Online Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+
+ 
+</head>
+<body>
+    <header>
+        <div class="container top-nav">
+            <a href="#" class="logo"><img src="img/logo-black.png" alt="logo"></a>
+            <form action="" class="search">
+                <input type="search" name="" id="" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="card_header">
+                <i  onclick="open_cart()" class="fa-solid fa-basket-shopping"></i>
+                <span class="count_items">0</span>
+            </div>
+            <div class="total_price">
+                <p>My Cart:</p>
+                <p class="price_cart">$0</p>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container container">
+                <div class="links">
+                    <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+                    <ul id="menu">
+                        <span  onclick="close_menu()" class="bg-overlay"></span>
+                        <i  onclick="close_menu()"  class="fa-regular fa-circle-xmark btn_close_menu"></i>
+                        <img class="logo_menu" src="img/logo-black.png" alt="">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="login_signup">
+                    <a href="#">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                    <a href="#">Signup <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <div class="cart ">
+        <div class="top_cart">
+            <h3>My Cart <span class="count_items_cart"></span></h3>
+            <span onclick="close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+        <div class="items_in_cart">
+          
+        </div>
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>Cart Subtotal</p>
+                <p class="price_cart_total">$0</p>
+            </div>
+            <div class="button_cart">
+                <a href="#" class="btn_cart">Proceed to Checkout</a>
+                <button class="btn_cart trans_bg">Shop More</button>
+            </div>
+        </div>
+    </div>
+
+   <div class="top_page">
+    <div class="container">
+        <h1>Experience the Future of Technology with our Topico.</h1>
+        <p>Find everything you need to transform your home into a smart, connected space . Our Topico store offers a wide range of devices to fit your needs </p>
+    </div>
+   </div>
+   
+   <section  class="all_products">
+    <div class="container">
+        <div class="filter">
+
+        </div>
+
+        <div id="products_div" class="products_div">
+
+        </div>
+    </div>
+   </section>
+      <div class="back_to_top">
+        <p>back to top</p>
+      </div>
+
+      <div class="newsletter">
+        <div class="container">
+            <div class="text">
+                <img src="img/icon_email.png" alt="">
+                <div class="content">
+                    <h4>Sign up to newsletter</h4>
+                    <p>Get email updates about our shop ... ands receive</p>
+                    <h6>30$ Coupon for first shopping</h6>
+                </div> 
+            </div>
+
+            <form action="" class="newsletter_form">
+                <input type="email" placeholder="Enter your email here">
+                <button type="submit">subscribe</button>
+            </form>
+        </div>
+      </div>
+
+<footer>
+    <div class="container">
+        <div class="big_row">
+            <img src="img/logo-white.png" alt="">
+            <div class="hotline">
+                <i class="fa-solid fa-headset"></i>
+                <div class="text">
+                    <h5>Hotline Free 24/24:</h5>
+                    <h6>(+100) 123 456 7890</h6>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="row">
+            <h4>FQA & Help</h4>
+
+            <div class="links">
+                <a href="#">FAQ's</a>
+                <a href="#">Ordering Tracking</a>
+                <a href="#">Contacts</a>
+                <a href="#">Events</a>
+                <a href="#">Help Center</a>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <h4>Shipping & Delivery</h4>
+
+            <div class="links">
+                <a href="#">Delivery Information</a>
+                <a href="#">Discount</a>
+                <a href="#">Payment & Shipping</a>
+                <a href="#">Estimated Delivery Time</a>
+                <a href="#">Shipping Guide</a>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <h4>Information</h4>
+
+            <div class="links">
+                <a href="#">Popular</a>
+                <a href="#">Our Services</a>
+                <a href="#">Your Account</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="bottom_footer">
+        <div class="container">
+            <p>Copyright &copy; <span>Topico </span> All rights reserved</p>
+            <div class="payments_imgs">
+                <img src="img/payment-1.png" alt="">
+                <img src="img/payment-2.png" alt="">
+                <img src="img/payment-3.png" alt="">
+                <img src="img/payment-4.png" alt="">
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/all_products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
