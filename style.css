@@ -176,7 +176,7 @@ header .links ul li::after {
     position: absolute;
     background: var(--main-color);
     width: 0%;
-    bottom: 0;
+    bottom: -16px;
     left: 0;
     height: 2px;
     transition: width 0.3s ease-in-out;
@@ -933,3 +933,227 @@ footer .container .big_row .hotline h6{
         filter: grayscale(0%);
     }
 /* End Footer Section */
+
+
+/* Responsive  */
+header   .links  ul .bg-overlay,
+header .links  ul .logo_menu,
+header .links  .btn_open_menu,
+ header .links  ul .btn_close_menu{
+    display: none;
+ }
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    header .top-nav .search{
+        width:420px ; 
+     }
+
+     .slider .container .side_bar{
+        display: none;
+     }
+
+     .slider .container .slide-swp{
+         width: 100%;
+     }
+
+     .newsletter .container {
+        flex-direction: column;
+        gap: 30px;
+     }
+     .newsletter .container .text{
+        width: 100%;
+     }
+
+     .newsletter .newsletter_form{
+        width: 75%;
+     } 
+
+    footer .container{
+        flex-wrap: wrap;
+    }
+    footer .container .row{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    footer .container .big_row{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+@media (max-width:900px) {
+
+    body {
+        margin-top: 240px;
+    }
+
+    header .top-nav {
+        flex-wrap: wrap;
+     }
+     header .top-nav .search{
+        order: 3;
+        width: 80%;
+        margin: 10px auto;
+     }
+
+     header .links {
+        padding: 20px 0;
+     }
+
+     header .links  ul {
+        padding-top: 50px;
+        position: fixed;
+        top: 0;
+        left: -420px;
+        bottom: 0;
+        background: white;
+        flex-direction: column;
+        gap: 20px;
+        width: 400px;
+        border-right: 1px solid var(--border-color);
+        text-align: center;
+        font-size: 24px;
+        transition: 0.3s ease;
+        cursor: pointer;
+     }
+
+     header .links  ul.active {
+        left: 0;
+     }
+     header .links  ul .logo_menu {
+        width: 130px;
+        margin: 0 auto;
+        display: block;
+
+     }
+
+     header .links  ul .btn_close_menu{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: var(--main-color);
+        font-size: 30px;
+     }
+     header .links  .btn_open_menu{
+        cursor: pointer;
+
+        display: block;
+        font-size: 25px;
+     }
+     header  .links  ul .bg-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        right: -100%;
+        background: #0000003d;
+        width: calc(100vw - 415px);
+        transition: 0.3s ease-in-out;
+     }
+     header   .links  ul.active .bg-overlay  {
+        right: 0%;
+     }
+
+     .features .container .feature_item {
+        margin-bottom: 12px;
+     }
+
+     .banner{
+        margin: 0px;
+    }
+    .slide{
+        margin-bottom:40px ;
+    }
+
+    .slide_product .categ_img {
+        display: none;
+    }
+
+    .newsletter .text h4{
+        font-size: 22px;
+    }
+    .newsletter .text p{
+        font-size: 14px;
+    }
+    .newsletter .text h6{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 700px){
+    .newsletter .text h4{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    header .top-nav .search {
+        width: 100%;
+    }
+    header .top-nav .search input {
+    padding: 13px 135px 13px 20px ;        
+    }
+    header .top-nav .search button {
+       width: 120px;
+       font-size: 14px; 
+    }
+    header .links ul {
+        width: 100%;
+        left: -100%;
+    }
+
+    .cart{
+        width: 100%;
+        right: -100%;
+    }
+
+    .product .name_product {
+        font-size: 13px;
+    }
+
+    .product{
+        padding: 15px 10px;
+    }
+    .stars i {
+        font-size: 14px;
+    }
+
+    .slide{
+        margin-bottom:30px ;
+    }
+
+    .top_slide h2{
+        font-size: 16px;
+    }
+
+    .product .name_product a {
+     font-size: 13px;
+    }
+
+
+    .newsletter .newsletter_form {
+        width: 100%;
+    }
+    footer .container .row{
+        width: 100%;
+    }
+    footer .container .big_row{
+        width: 100%;
+    }
+
+
+}

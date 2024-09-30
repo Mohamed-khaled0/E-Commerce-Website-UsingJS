@@ -31,7 +31,11 @@
         <nav>
             <div class="nav-container container">
                 <div class="links">
-                    <ul>
+                    <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+                    <ul id="menu">
+                        <span  onclick="close_menu()" class="bg-overlay"></span>
+                        <i  onclick="close_menu()"  class="fa-regular fa-circle-xmark btn_close_menu"></i>
+                        <img class="logo_menu" src="img/logo-black.png" alt="">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">All Products</a></li>
                         <li><a href="#">About Us</a></li>
@@ -288,7 +292,7 @@
             <div class="text">
                 <img src="img/icon_email.png" alt="">
                 <div class="content">
-                    <h4>sign up to newsletter</h4>
+                    <h4>Sign up to newsletter</h4>
                     <p>Get email updates about our shop ... ands receive</p>
                     <h6>30$ Coupon for first shopping</h6>
                 </div> 

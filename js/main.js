@@ -1,4 +1,4 @@
- // open $ close Cart
+ // open & close Cart
 var cart = document.querySelector('.cart');
 function open_cart(){
     cart.classList.add("active");
@@ -6,6 +6,15 @@ function open_cart(){
 function close_cart(){
     cart.classList.remove("active");
 }
+
+// open menu 
+let menu = document.querySelector('#menu');
+function open_menu(){
+    menu.classList.add("active");
+}
+function close_menu(){
+    menu.classList.remove("active");
+} 
 
 // add items in cart 
 
@@ -92,3 +101,5 @@ back_to_top.addEventListener("click" , function(){
         behavior:"smooth"
     })
 })
+
+

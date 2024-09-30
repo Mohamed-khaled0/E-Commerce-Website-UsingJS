@@ -23,7 +23,24 @@ var swiper = new Swiper(".sale_sec", {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
         },
-        loop: true
+        loop: true,
+        breakpoints :{
+          1600:{
+            slidesPerView: 5,
+          },
+          1200:{
+            slidesPerView: 4,
+            spaceBetween:30
+          },
+          700:{
+            slidesPerView: 3,
+            spaceBetween:15
+          },
+          0:{
+            slidesPerView: 2,
+            spaceBetween:10
+          },
+        }
       });
 
       var swiper = new Swiper(".product_swip", {
@@ -36,5 +53,26 @@ var swiper = new Swiper(".sale_sec", {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
         },
-        loop: true
+        loop: true,
+        breakpoints :{
+          1600:{
+            slidesPerView: 4,
+          },
+          1200:{
+            slidesPerView: 3,
+            spaceBetween:30
+          },
+          900:{
+            slidesPerView: 3,
+            spaceBetween:20
+          },
+          700:{
+            slidesPerView: 2,
+            spaceBetween:15
+          },
+          0:{
+            slidesPerView: 2,
+            spaceBetween:10
+          },
+        }
       });
