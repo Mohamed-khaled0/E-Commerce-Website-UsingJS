@@ -5,7 +5,6 @@
 Topico is an online shop that offers a wide variety of products, ranging from electronics to fashion, with great deals and discounts.
 
 ## Table of Contents
-- [Live-Demo](https://mohamed-khaled0.github.io/E-Commerce-Website-UsingJS/)
 - [Youtube-Video](https://youtu.be/b2u6LyDUVCY)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
